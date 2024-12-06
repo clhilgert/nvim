@@ -1,5 +1,11 @@
 require("config.lazy")
 
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.shiftwidth = 4
+vim.opt.clipboard = "unnamedplus"
+vim.opt.wildmenu = true
+
 vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>x", ":.lua<CR>")
 vim.keymap.set("n", "<space>x", ":lua<CR>")
